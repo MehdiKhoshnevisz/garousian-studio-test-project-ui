@@ -20,6 +20,11 @@ const ButtonStyled = styled.button((props) => ({
   borderRadius: "0.25em",
   ...(props.color == "primary" && primaryAttrs),
   ...(props.color == "secondary" && secondaryAttrs),
+
+  "&:active": {
+    transition: "all 0.1s ease",
+    transform: "scale(0.9)",
+  },
 }));
 
 export const Button = (props) => {
