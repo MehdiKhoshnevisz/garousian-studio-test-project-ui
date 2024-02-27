@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+import {
+  LogoTitle,
+  LogoWrapper,
+  LogoCaption,
+  MetaSection,
+  MetaSectionTitle,
+  MetaSectionCaption,
+  CallToActionsWrapper,
+} from "../TopSection/TopSection.styled";
 import { SectionWrapper } from "@/components/Base/SectionWrapper";
 
 import ContactUsBackgroundImage from "/public/images/contact-us-bg.png";
@@ -19,52 +28,11 @@ const Wrapper = styled(SectionWrapper)({
   },
 });
 
-const LogoWrapper = styled.div({
-  color: "#ffffff",
-  textAlign: "center",
-  marginBottom: "4.5em",
-});
-
-const LogoTitle = styled.span({
-  display: "block",
-  fontSize: "1.5em",
-  fontWeight: "bold",
-});
-
-const LogoCaption = styled.span({
-  display: "block",
-  fontSize: "1.25em",
-});
-
-const MetaSection = styled.section({
-  color: "#ffffff",
-  marginBottom: "4.5em",
-});
-
-const MetaSectionTitle = styled.h1({
-  fontSize: "1.875em",
-  marginBottom: "0.5em",
-});
-
-const MetaSectionCaption = styled.p({
-  marginBottom: "0",
-  fontWeight: "200",
-  fontSize: "1.25em",
-});
-
-const CallToActionsWrapper = styled.div({
-  gap: "1em",
-  display: "flex",
-  flexWrap: "wrap",
-  alignItems: "center",
-  justifyContent: "center",
-});
-
 export {
   Wrapper,
   LogoTitle,
-  LogoCaption,
   LogoWrapper,
+  LogoCaption,
   MetaSection,
   MetaSectionTitle,
   MetaSectionCaption,
