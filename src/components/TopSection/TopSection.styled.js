@@ -33,6 +33,7 @@ const LogoTitle = styled.span({
 
 const LogoCaption = styled.span({
   display: "block",
+
   fontSize: "1.25em",
 });
 
@@ -49,6 +50,7 @@ const MetaSectionTitle = styled.h1({
 const MetaSectionCaption = styled.p({
   marginBottom: "0",
   fontWeight: "200",
+  maxWidth: "700px",
   fontSize: "1.25em",
 });
 

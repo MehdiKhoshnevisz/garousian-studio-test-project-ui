@@ -26,9 +26,11 @@ const MetaSectionTitle = styled.h2({
 });
 
 const MetaSectionCaption = styled.p({
+  margin: "auto",
   marginBottom: "0",
   fontWeight: "200",
   fontSize: "1.2em",
+  maxWidth: "750px",
   color: "var(--secondary)",
 });
 
