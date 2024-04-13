@@ -5,10 +5,11 @@ import { SectionWrapper } from "@/components/Base/SectionWrapper";
 import BackgroundImage from "/public/images/bg-image.png";
 
 const Wrapper = styled(SectionWrapper)({
-  minHeight: "750px",
   textAlign: "center",
   position: "relative",
   backgroundSize: "cover",
+  paddingTop: "7.60375em",
+  paddingBottom: "7.60375em",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundImage: `url(${BackgroundImage.src})`,
@@ -24,6 +25,8 @@ const Wrapper = styled(SectionWrapper)({
 
   "@media(max-width: 768px)": {
     minHeight: "540px",
+    paddingTop: "3.29125em",
+    paddingBottom: "3.29125em",
   },
 });
 
@@ -41,33 +44,48 @@ const LogoTitle = styled.span({
 
 const LogoCaption = styled.span({
   display: "block",
-
   fontSize: "1.25em",
 });
 
 const MetaSection = styled.section({
+  margin: "auto",
   color: "#ffffff",
+  maxWidth: "700px",
   marginBottom: "4.5em",
+
+  "@media(max-width: 768px)": {
+    maxWidth: "280px",
+  },
 });
 
 const MetaSectionTitle = styled.h1({
-  fontSize: "1.875em",
-  marginBottom: "0.5em",
+  fontSize: "2rem",
+  marginBottom: "0.25em",
+
+  "@media(max-width: 768px)": {
+    fontSize: "1.375rem",
+  },
 });
 
 const MetaSectionCaption = styled.p({
   marginBottom: "0",
   fontWeight: "200",
-  maxWidth: "700px",
-  fontSize: "1.25em",
+  fontSize: "1.25rem",
+
+  "@media(max-width: 768px)": {
+    fontSize: "1rem",
+  },
 });
 
 const CallToActionsWrapper = styled.div({
   gap: "1em",
   display: "flex",
-  flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "center",
+
+  "@media(max-width: 319px)": {
+    flexWrap: "wrap",
+  },
 });
 
 export {
