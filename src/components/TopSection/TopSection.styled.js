@@ -8,8 +8,8 @@ const Wrapper = styled(SectionWrapper)({
   textAlign: "center",
   position: "relative",
   backgroundSize: "cover",
-  paddingTop: "7.60375em",
-  paddingBottom: "7.60375em",
+  paddingTop: "7.60375rem",
+  paddingBottom: "7.60375rem",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundImage: `url(${BackgroundImage.src})`,
@@ -25,8 +25,8 @@ const Wrapper = styled(SectionWrapper)({
 
   "@media(max-width: 768px)": {
     minHeight: "540px",
-    paddingTop: "3.29125em",
-    paddingBottom: "3.29125em",
+    paddingTop: "3.29125rem",
+    paddingBottom: "3.29125rem",
   },
 });
 
