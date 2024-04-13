@@ -60,7 +60,7 @@ const MetaSection = styled.section({
 
 const MetaSectionTitle = styled.h1({
   fontSize: "2rem",
-  marginBottom: "0.25em",
+  marginBottom: "0.5rem",
 
   "@media(max-width: 768px)": {
     fontSize: "1.375rem",
