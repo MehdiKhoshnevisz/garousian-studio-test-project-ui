@@ -7,12 +7,20 @@ import BackgroundImage from "/public/images/bg-image.png";
 const Wrapper = styled(SectionWrapper)({
   minHeight: "750px",
   textAlign: "center",
+  position: "relative",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  backgroundBlendMode: "multiply",
-  backgroundColor: "rgba(32, 55, 137, 0.8)",
   backgroundImage: `url(${BackgroundImage.src})`,
+
+  "&:before": {
+    opacity: 0.8,
+    content: '""',
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    backgroundColor: "#203789",
+  },
 
   "@media(max-width: 768px)": {
     minHeight: "540px",
