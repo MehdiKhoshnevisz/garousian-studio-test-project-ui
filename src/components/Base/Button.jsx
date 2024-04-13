@@ -14,8 +14,10 @@ const secondaryAttrs = {
 const ButtonStyled = styled.button((props) => ({
   border: "none",
   cursor: "pointer",
-  fontSize: "1.25em",
-  padding: "0.5em 2em",
+  minHeight: "50px",
+  minWidth: "220px",
+  fontSize: "1.25rem",
+  padding: "8px 51px",
   fontFamily: "inherit",
   borderRadius: "0.25em",
   ...(props.color == "primary" && primaryAttrs),
@@ -24,6 +26,17 @@ const ButtonStyled = styled.button((props) => ({
   "&:active": {
     transition: "all 0.1s ease",
     transform: "scale(0.9)",
+  },
+
+  "@media(max-width: 768px)": {
+    fontSize: "1rem",
+    minWidth: "150px",
+    minHeight: "43px",
+    padding: "8px 28px",
+  },
+
+  "@media(max-width: 360px)": {
+    padding: "0",
   },
 }));
 
