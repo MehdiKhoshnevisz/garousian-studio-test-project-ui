@@ -51,8 +51,11 @@ p {
 
 .container {
   z-index: 100;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
   max-width: var(--max-width);
 }
 
@@ -63,7 +66,5 @@ p {
 
   .container {
     max-width: 100%;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
   }
 }
