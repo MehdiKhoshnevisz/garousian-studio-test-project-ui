@@ -20,17 +20,25 @@ const MetaSection = styled.section({
 });
 
 const MetaSectionTitle = styled.h2({
-  fontSize: "1.75em",
+  fontSize: "1.75rem",
   marginBottom: "0.5em",
+
+  "@media(max-width: 768px)": {
+    fontSize: "1rem",
+  },
 });
 
 const MetaSectionCaption = styled.p({
   margin: "auto",
   marginBottom: "0",
   fontWeight: "200",
-  fontSize: "1.2em",
   maxWidth: "750px",
+  fontSize: "1.125rem",
   color: "var(--secondary)",
+
+  "@media(max-width: 768px)": {
+    fontSize: "0.875rem",
+  },
 });
 
 const ServicesWrapper = styled.div({
@@ -44,6 +52,16 @@ const ServicesWrapper = styled.div({
 
 const ServiceBox = styled.figure({
   flexBasis: "33.33%",
+
+  "@media(max-width: 768px)": {
+    margin: "auto",
+    maxWidth: "400px",
+  },
+
+  "@media(max-width: 576px)": {
+    margin: "auto",
+    maxWidth: "310px",
+  },
 });
 
 const ServiceBoxSection = styled.figcaption({

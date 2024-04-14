@@ -36,10 +36,11 @@ export const ServicesSection = () => {
           {services.map((item, index) => (
             <ServiceBox key={index}>
               <ServicesSectionImage
-                src={item.image}
+                alt=""
                 width={400}
                 height={250}
-                alt=""
+                src={item.image}
+                style={{ objectFit: "cover" }}
               />
 
               <ServiceBoxSection>
