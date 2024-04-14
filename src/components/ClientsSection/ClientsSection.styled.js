@@ -5,33 +5,46 @@ import Image from "next/image";
 
 const Wrapper = styled(SectionWrapper)({
   textAlign: "center",
-  paddingTop: "6.875em",
-  paddingBottom: "6.875em",
+  paddingTop: "100px",
+  paddingBottom: "100px",
   backgroundColor: "#fafafa",
 
   "@media(max-width: 768px)": {
     minHeight: "540px",
-    paddingTop: "3.75em",
-    paddingBottom: "3.75em",
+    paddingTop: "50px",
+    paddingBottom: "50px",
   },
 });
 
 const MetaSection = styled.section({
-  marginBottom: "3.75em",
+  marginBottom: "72px",
+
+  "@media(max-width: 768px)": {
+    marginBottom: "32px",
+  },
 });
 
 const MetaSectionTitle = styled.h2({
-  fontSize: "1.75em",
-  marginBottom: "0.5em",
+  fontSize: "1.75rem",
+  marginBottom: "8px",
+
+  "@media(max-width: 768px)": {
+    fontSize: "1rem",
+    marginBottom: "16px",
+  },
 });
 
 const MetaSectionCaption = styled.p({
   margin: "auto",
   marginBottom: "0",
   fontWeight: "200",
-  fontSize: "1.2em",
+  fontSize: "1.125rem",
   maxWidth: "750px",
   color: "var(--secondary)",
+
+  "@media(max-width: 768px)": {
+    fontSize: "0.875rem",
+  },
 });
 
 const ClientsWrapper = styled.div({
@@ -48,18 +61,22 @@ const ClientsWrapper = styled.div({
 const ClientBox = styled.figure({
   gap: "2.5em",
   display: "flex",
-  padding: "3.5em",
-  background: "#fff",
+  padding: "56px",
   flexBasis: "50%",
-  borderRadius: "1em",
+  maxWidth: "528px",
+  background: "#fff",
   textAlign: "right",
+  borderRadius: "1em",
   boxShadow: "var(--shadow)",
 
   "@media(max-width: 768px)": {
     display: "block",
+    maxWidth: "312px",
+    marginLeft: "auto",
+    marginRight: "auto",
     textAlign: "center",
-    marginBottom: "1.25em",
-    padding: "1.625em 1.125em",
+    marginBottom: "1.25rem",
+    padding: "26px",
   },
 });
 
@@ -75,7 +92,7 @@ const ClientBoxAvatar = styled(Image)({
   },
 });
 
-const ClientBoxComment = styled.figcaption({
+const ClientBoxComment = styled.div({
   flex: "1",
   display: "flex",
   flexDirection: "column",
@@ -95,9 +112,11 @@ const ClientBoxCommentMessage = styled.p({
   },
 });
 
+const ClientBoxUserInfo = styled.figcaption({});
+
 const ClientBoxUserName = styled.h3({
   fontSize: "1em",
-  marginBottom: "0.25rem",
+  marginBottom: "0.5rem",
 });
 
 const ClientBoxUserJob = styled.span({
@@ -105,13 +124,14 @@ const ClientBoxUserJob = styled.span({
 
   "@media(max-width: 768px)": {
     display: "block",
-    marginBottom: "1em",
+    marginBottom: "1rem",
   },
 });
 
 const ClientLogoWrapper = styled.div({
   gap: "3.75em",
   display: "flex",
+  marginTop: "8px",
   alignItems: "center",
   justifyContent: "center",
 
@@ -121,9 +141,11 @@ const ClientLogoWrapper = styled.div({
 });
 
 const ClientLogo = styled(Image)({
+  objectFit: "contain",
+
   "@media(max-width: 768px)": {
-    width: "1.875em",
-    height: "1.875em",
+    width: "30px",
+    height: "30px",
   },
 });
 
@@ -139,6 +161,7 @@ export {
   MetaSectionTitle,
   ClientLogoWrapper,
   ClientBoxUserName,
+  ClientBoxUserInfo,
   MetaSectionCaption,
   ClientBoxCommentMessage,
 };

@@ -12,6 +12,7 @@ import {
   ClientBoxUserJob,
   MetaSectionTitle,
   ClientBoxUserName,
+  ClientBoxUserInfo,
   MetaSectionCaption,
   ClientBoxCommentMessage,
 } from "./ClientsSection.styled";
@@ -57,10 +58,10 @@ export const ClientSection = () => {
                 <ClientBoxCommentMessage>
                   {item.comment}
                 </ClientBoxCommentMessage>
-                <div>
+                <ClientBoxUserInfo>
                   <ClientBoxUserName>{item.user.name}</ClientBoxUserName>
                   <ClientBoxUserJob>{item.user.job}</ClientBoxUserJob>
-                </div>
+                </ClientBoxUserInfo>
               </ClientBoxComment>
             </ClientBox>
           ))}
