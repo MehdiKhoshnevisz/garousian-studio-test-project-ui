@@ -49,6 +49,10 @@ const VideoBox = styled.div({
     width: "312px",
     height: "180px",
   },
+
+  "@media(max-width: 360px)": {
+    width: "100%",
+  },
 });
 
 const VideoMeta = styled.div({
